@@ -3,13 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { TranslateModule } from '@ngx-translate/core';
 
-import { PageNotFoundComponent, AirflowChartComponent } from './components/';
+import {
+  PageNotFoundComponent,
+  FlowChartComponent,
+  PressureChartComponent,
+  VolumeChartComponent
+} from './components/';
 import { WebviewDirective } from './directives/';
 import { FormsModule } from '@angular/forms';
 
 const components = [
   PageNotFoundComponent,
-  AirflowChartComponent
+  FlowChartComponent,
+  PressureChartComponent,
+  VolumeChartComponent
 ];
 
 @NgModule({
