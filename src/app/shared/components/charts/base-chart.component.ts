@@ -56,6 +56,11 @@ export class BaseChartComponent implements AfterViewInit, OnDestroy {
     return new Chart(canvas.getContext('2d'), {
       type: 'line',
       data: seedData,
+      options: {   
+        animation: {
+            duration: 0,
+        },
+     }
     });
   }
 

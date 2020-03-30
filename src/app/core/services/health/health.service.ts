@@ -16,7 +16,7 @@ export class HealthService {
     private _count = 0;
  
     constructor() {
-        timer(0, 1000).subscribe((sec: number) => {
+        timer(0, 100).subscribe((sec: number) => {
             const dataset: IVentilatorDataset = {
                 '1': {
                     timestamp: sec,
