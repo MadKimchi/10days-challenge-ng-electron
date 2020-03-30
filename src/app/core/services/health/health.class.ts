@@ -1,4 +1,4 @@
-import { HealtDatahTypeEnum } from "./health.enum";
+import { HealtDataTypeEnum } from "./health.enum";
 import { IHealthData } from "./health.interface";
 import { Queue } from "./queue.class";
 
@@ -14,7 +14,7 @@ export class HealthData {
   }
 
   constructor(
-    public dataType: HealtDatahTypeEnum,
+    public dataType: HealtDataTypeEnum,
     public capacity: number
   ) {
     this._dataset = new Queue();
