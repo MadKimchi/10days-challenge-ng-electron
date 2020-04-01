@@ -16,27 +16,27 @@ export class HealthService {
     private _count = 0;
  
     constructor() {
-        // timer(0, 100).subscribe((sec: number) => {
-        //     const dataset: IVentilatorDataset = {
-        //         '1': {
-        //             timestamp: sec,
-        //             circuitId: '1',
-        //             flow: this.mockFlow[this._count],
-        //             volume: this.mockVolume[this._count],
-        //             pressure: this.mockPressure[this._count]
-        //         },
-        //         '2': {
-        //             timestamp: sec,
-        //             circuitId: '2',
-        //             flow: this.mockFlow[this._count],
-        //             volume: this.mockVolume[this._count],
-        //             pressure: this.mockPressure[this._count]
-        //         },
-        //     };
-        //     this._count++;
-        //     if (this._count >= this.mockFlow.length-1) { this._count = 0; }
+        timer(0, 100).subscribe((sec: number) => {
+            const dataset: IVentilatorDataset = {
+                '1': {
+                    timestamp: sec,
+                    circuitId: '1',
+                    flow: this.mockFlow[this._count],
+                    volume: this.mockVolume[this._count],
+                    pressure: this.mockPressure[this._count]
+                },
+                '2': {
+                    timestamp: sec,
+                    circuitId: '2',
+                    flow: this.mockFlow[this._count],
+                    volume: this.mockVolume[this._count],
+                    pressure: this.mockPressure[this._count]
+                },
+            };
+            this._count++;
+            if (this._count >= this.mockFlow.length-1) { this._count = 0; }
 
-        //     this.onHealthUpdate.next(dataset);
-        // })
+            this.onHealthUpdate.next(dataset);
+        })
     }
 }

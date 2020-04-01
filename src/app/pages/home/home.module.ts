@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CommonModule } from '@angular/common';
-import { ChartsModule } from 'ng2-charts';
 import { MatSliderModule } from '@angular/material/slider';
 
 import { HomeRoutingModule } from './home-routing.module';
@@ -18,8 +17,7 @@ import { SharedModule } from '../../shared/shared.module';
     BrowserAnimationsModule,
     SharedModule,
     HomeRoutingModule,
-    MatSliderModule,
-    ChartsModule,  
+    MatSliderModule
   ]
 })
 export class HomeModule {}
