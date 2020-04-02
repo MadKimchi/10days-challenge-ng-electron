@@ -1,6 +1,6 @@
 # Introduction
 
-An Electron application built with Angular for the Argonize Challenge for COVID-19
+An Electron application built with Angular for the 10 day Challenge for COVID-19 from Argonize
 
 Currently runs with:
 
